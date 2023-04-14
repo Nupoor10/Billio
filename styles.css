@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap');
+*{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    font-family: 'Nova Oval', cursive;
+}
+
+.main h1 {
+    text-align: center;
+    color: #70fdf1;
+    font-size: 38px;
+}
+
+.main h3 {
+    text-align: center;
+}
+
+.expense-form {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin: 60px;
+}
+
+.field{
+    position: relative;
+}
+
+label {
+    background: #323645;
+    font-weight: normal;
+    color: #8E909D;
+    font-size:  0.875rem;
+    line-height: 1.3125rem;
+    position: absolute;
+    left: 20px;
+    top: 12px;
+  }
+  
+  input[type=text] {
+    background: #323645;
+    border-radius: 16px;
+    padding:  35px 20px 15px;
+    border: 2px solid transparent;
+    height: 85px;
+    width: 250px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size:  1rem;
+    outline: none;
+  }
+  
+  input[type=text]:focus {
+    border: 2px solid #70fdf1;
+  }
+  
+  input[type=text]:focus + label {
+    color: #70fdf1;
+  }
+  
+button {
+    outline: none;
+    border-radius: 30px;
+    background-color: #70fdf1;
+    color: #323645;
+    padding: 10px;
+    height: 60px;
+    width: 220px;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.expense-list {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.split-section {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}

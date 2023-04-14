@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bill Spliter</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="main">
+        <h1 id="demo">💸 BILL SPLIT APP 💸 </h1>
+        <div>
+          <form id="formdata">
+            <div class="expense-form">
+              <div class="field">
+                <input type="text" name="amount" id="amount" required>
+                <label for="amount">Expense</label>
+              </div>
+              <div class="field">
+                <input type="text" name="description" id="description">
+                <label for="description">Description</label>
+              </div>
+              <button type="submit">ADD</button>
+            </div>   
+          </form>  
+        </div>
+        <div class="expense-list">
+          <div id="list">
+          </div>
+          <br>
+          <button id="total">CALCULATE TOTAL</button>
+          <h3>Total Amount  : <span id="totalAmt"></span></h3>
+        </div>
+        <div>
+            <form id="formdata2">
+              <div class="split-section">
+                <div class="field">
+                  <input type="text" name="people" id="people">
+                  <label for="people">Number of People</label>
+                </div>
+                <button type="submit">SPLIT</button>
+              </div>
+            </form>
+            <div class="split-section">
+              <p>No of People : <span id="peopleCount"></span></p>
+              <p>Amount per person : <span id="finalAmt"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript for Project -->
+    <script src="script.js"></script>
+  </body>
+</html>
